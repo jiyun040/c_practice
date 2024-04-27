@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int num1, num2;
+	int plus, minus, multi, div, rest;
+
+	printf("두 개의 수를 입력하시오. ");
+	scanf("%d %d", &num1, &num2); //%d %d 뒤에 공백문자 삽입 하지 말기
+	                              //삽입하게 되면 공백만 출력 됨
+
+	plus = num1 + num2;
+	minus = num1 - num2;
+	multi = num1 * num2;
+	div = num1 / num2;
+	rest = num1 % num2;
+
+
+	printf("%d + %d = %d\n", num1, num2, plus);
+	printf("%d - %d = %d\n", num1, num2, minus);
+	printf("%d * %d = %d\n", num1, num2, multi);
+	printf("%d / %d = %d\n", num1, num2, div);
+	printf("%d %% %d = %d\n", num1, num2, rest);
+
+
+	return 0;
+}
