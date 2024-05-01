@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void)
+{
+    float a, b; //실수형으로 받을 거기에 float으로 받아줌
+
+    scanf("%f %f", &a, &b); //실수형이기에 %f
+
+    if (a >= 4 && b >= 4)
+    {
+        printf("A");
+    }
+    else if (a >= 3 && b >= 3)
+    {
+        printf("B");
+    }
+    else
+    {
+        printf("C");
+    }
+
+    return 0;
+}
