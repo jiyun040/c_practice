@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int n;
+    int sum = 0; int cnt = 0;
+    double avg;
+
+    while (1)
+    {
+        scanf("%d", &n);
+        if (n == 0)
+        {
+            break;
+        }
+        sum += n;
+        cnt++;
+    }
+    avg = (double)sum / cnt;
+
+    printf("입력된 자료의 개수 = %d\n", cnt);
+    printf("입력된 자료의 합계 = %d\n", sum);
+    printf("입력된 자료의 평균 = %.2f\n", avg);
+
+    return 0;
+}
